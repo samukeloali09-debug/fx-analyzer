@@ -79,7 +79,8 @@ with col2:
                     # Configure Gemini API
                     genai.configure(api_key=api_key)
                     # Updated model string to gemini-2.5-flash
-                    model = genai.GenerativeModel("gemini-2.5-flash")
+                    model = genai.GenerativeModel("gemini-3.7-flash")
+                    
                     
                     # Prompt Construction
                     prompt = f"""
