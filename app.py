@@ -58,7 +58,9 @@ with col1:
     
     if uploaded_image is not None:
         image = Image.open(uploaded_image)
-        st.image(image, caption=f"Uploaded Chart: {pair_symbol} ({timeframe})", use_column_width=True)
+        # Updated width parameter to 'stretch' (fixes the Streamlit error)
+        st.image(image, caption=f"Uploaded Chart: {pair_symbol} ({timeframe})", width="stretch")
+        
 
 # ------------------------------------------------------------------------------
 # 4. Analysis Logic & AI Execution
